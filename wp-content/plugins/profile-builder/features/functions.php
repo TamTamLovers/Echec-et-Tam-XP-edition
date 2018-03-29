@@ -169,7 +169,11 @@ function wppb_mail( $to, $subject, $message, $message_from = null, $context = nu
 	
 	if ( $send_email ) {
 		//we add this filter to enable html encoding
-		add_filter( 'wp_mail_content_type', create_function( '', 'return "text/html"; ' ) );
+		if ( version_compare( phpversion(), '5.3.0', '<' ) ) {
+			add_filter('wp_mail_content_type', create_function('', 'return "text/html"; '));
+		}else{
+			add_filter('wp_mail_content_type', function( $content_type ) { return 'text/html'; } );
+		}
 
 		$atts = apply_filters( 'wppb_mail', compact( 'to', 'subject', 'message', 'headers' ), $context );
 

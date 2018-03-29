@@ -421,11 +421,11 @@ msgstr ""
 msgid "<pre>Title</pre><pre>Type</pre><pre>Meta Name</pre><pre class=\"wppb-mb-head-required\">Required</pre><pre class=\"wppb-mb-head-visibility\"></pre>"
 msgstr ""
 
-#: ../pb-add-on-field-visibility/index.php:222, ../pb-add-on-labels-edit/pble.php:354, ../profile-builder-2.0/admin/manage-fields.php:1204, ../profile-builder-2.0/features/functions.php:743, ../profile-builder-2.0/features/functions.php:750, ../profile-builder-2.0/features/admin-approval/class-admin-approval.php:108, ../profile-builder-2.0/features/roles-editor/roles-editor.php:866, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:183, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:197, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:211, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:225, ../profile-builder-2.0/modules/multiple-forms/multiple-forms.php:406
+#: ../pb-add-on-field-visibility/index.php:222, ../pb-add-on-labels-edit/pble.php:354, ../profile-builder-2.0/admin/manage-fields.php:1204, ../profile-builder-2.0/features/functions.php:747, ../profile-builder-2.0/features/functions.php:754, ../profile-builder-2.0/features/admin-approval/class-admin-approval.php:108, ../profile-builder-2.0/features/roles-editor/roles-editor.php:866, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:183, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:197, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:211, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:225, ../profile-builder-2.0/modules/multiple-forms/multiple-forms.php:406
 msgid "Edit"
 msgstr ""
 
-#: ../pb-add-on-field-visibility/index.php:222, ../profile-builder-2.0/admin/manage-fields.php:1204, ../profile-builder-2.0/features/functions.php:736, ../profile-builder-2.0/features/functions.php:750, ../profile-builder-2.0/features/admin-approval/class-admin-approval.php:113, ../profile-builder-2.0/features/email-confirmation/class-email-confirmation.php:121, ../profile-builder-2.0/features/email-confirmation/class-email-confirmation.php:218, ../profile-builder-2.0/features/roles-editor/roles-editor.php:179, ../profile-builder-2.0/features/roles-editor/roles-editor.php:884, ../profile-builder-2.0/features/roles-editor/roles-editor.php:893, ../profile-builder-2.0/features/roles-editor/roles-editor.php:904, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:183, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:197, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:211, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:225
+#: ../pb-add-on-field-visibility/index.php:222, ../profile-builder-2.0/admin/manage-fields.php:1204, ../profile-builder-2.0/features/functions.php:740, ../profile-builder-2.0/features/functions.php:754, ../profile-builder-2.0/features/admin-approval/class-admin-approval.php:113, ../profile-builder-2.0/features/email-confirmation/class-email-confirmation.php:121, ../profile-builder-2.0/features/email-confirmation/class-email-confirmation.php:218, ../profile-builder-2.0/features/roles-editor/roles-editor.php:179, ../profile-builder-2.0/features/roles-editor/roles-editor.php:884, ../profile-builder-2.0/features/roles-editor/roles-editor.php:893, ../profile-builder-2.0/features/roles-editor/roles-editor.php:904, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:183, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:197, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:211, ../profile-builder-2.0/modules/custom-redirects/custom_redirects_admin.php:225
 msgid "Delete"
 msgstr ""
 
@@ -853,7 +853,7 @@ msgstr ""
 msgid "You will be redirected in 5 seconds. If not, click %%."
 msgstr ""
 
-#: ../pb-add-on-social-connect/index.php:390, ../profile-builder-2.0/features/functions.php:1028
+#: ../pb-add-on-social-connect/index.php:390, ../profile-builder-2.0/features/functions.php:1032
 msgid "here"
 msgstr ""
 
@@ -1173,7 +1173,7 @@ msgstr ""
 msgid "Click to edit"
 msgstr ""
 
-#: ../pb-add-on-campaign-monitor-integration/admin/cmonitor-page.php:451, ../pb-add-on-mailchimp-integration/admin/mailchimp-page.php:171, ../profile-builder-2.0/features/functions.php:729, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:403, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:395
+#: ../pb-add-on-campaign-monitor-integration/admin/cmonitor-page.php:451, ../pb-add-on-mailchimp-integration/admin/mailchimp-page.php:171, ../profile-builder-2.0/features/functions.php:733, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:403, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:395
 msgid "Cancel"
 msgstr ""
 
@@ -1715,15 +1715,15 @@ msgstr ""
 msgid "Very weak"
 msgstr ""
 
-#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:230, ../profile-builder-2.0/features/functions.php:563, ../profile-builder-2.0/features/functions.php:587
+#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:230, ../profile-builder-2.0/features/functions.php:567, ../profile-builder-2.0/features/functions.php:591
 msgid "Weak"
 msgstr ""
 
-#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:231, ../profile-builder-2.0/features/functions.php:563, ../profile-builder-2.0/features/functions.php:587
+#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:231, ../profile-builder-2.0/features/functions.php:567, ../profile-builder-2.0/features/functions.php:591
 msgid "Medium"
 msgstr ""
 
-#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:232, ../profile-builder-2.0/features/functions.php:563, ../profile-builder-2.0/features/functions.php:587
+#: ../profile-builder-2.0/admin/admin-functions.php:137, ../profile-builder-2.0/admin/general-settings.php:232, ../profile-builder-2.0/features/functions.php:567, ../profile-builder-2.0/features/functions.php:591
 msgid "Strong"
 msgstr ""
 
@@ -4317,59 +4317,59 @@ msgstr ""
 msgid "<p>Your <strong>Profile Builder</strong> license is about to expire on %5$s. <br/>Please %1$sRenew Your Licence%2$s to continue receiving access to product downloads, automatic updates and support. %3$sRenew now and get 40&#37; off %4$s %6$sDismiss%7$s</p>"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:537
+#: ../profile-builder-2.0/features/functions.php:541
 msgid "Strength indicator"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:563, ../profile-builder-2.0/features/functions.php:587
+#: ../profile-builder-2.0/features/functions.php:567, ../profile-builder-2.0/features/functions.php:591
 msgid "Very Weak"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:577
+#: ../profile-builder-2.0/features/functions.php:581
 msgid "Minimum length of %d characters."
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:588
+#: ../profile-builder-2.0/features/functions.php:592
 msgid "The password must have a minimum strength of %s."
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:665
+#: ../profile-builder-2.0/features/functions.php:669
 msgid "This field is required"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:703, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:458, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:465, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:516, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:561
+#: ../profile-builder-2.0/features/functions.php:707, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:461, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:468, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:519, ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:564
 msgid "Please enter a (valid) reCAPTCHA value"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:710
+#: ../profile-builder-2.0/features/functions.php:714
 msgid "Incorrect phone number"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:722, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:402, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:394
+#: ../profile-builder-2.0/features/functions.php:726, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:402, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:394
 msgid "Save Changes"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:750, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:444, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:436
+#: ../profile-builder-2.0/features/functions.php:754, ../pb-add-on-labels-edit/assets/lib/wck-api/wordpress-creation-kit.php:444, ../profile-builder-2.0/assets/lib/wck-api/wordpress-creation-kit.php:436
 msgid "Content"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:761
+#: ../profile-builder-2.0/features/functions.php:765
 msgid "To allow users to register for your website via Profile Builder, you first must enable user registration. Go to %1$sNetwork Settings%2$s, and under Registration Settings make sure to check “User accounts may be registered”. %3$sDismiss%4$s"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:765
+#: ../profile-builder-2.0/features/functions.php:769
 msgid "To allow users to register for your website via Profile Builder, you first must enable user registration. Go to %1$sSettings -> General%2$s tab, and under Membership make sure to check “Anyone can register”. %3$sDismiss%4$s"
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:930
+#: ../profile-builder-2.0/features/functions.php:934
 msgid "<br><br>Also, you will be able to visit your site at "
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:943
+#: ../profile-builder-2.0/features/functions.php:947
 msgid "<br><br>You can visit your site at "
 msgstr ""
 
-#: ../profile-builder-2.0/features/functions.php:1029
+#: ../profile-builder-2.0/features/functions.php:1033
 msgid "You will soon be redirected automatically. If you see this page for more than %1$d seconds, please click %2$s.%3$s"
 msgstr ""
 
@@ -5041,7 +5041,7 @@ msgstr ""
 msgid "[%1$s] Your new account information"
 msgstr ""
 
-#: ../profile-builder-2.0/features/email-confirmation/email-confirmation.php:580, ../profile-builder-2.0/features/email-confirmation/email-confirmation.php:589, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:493, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:500, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:514
+#: ../profile-builder-2.0/features/email-confirmation/email-confirmation.php:580, ../profile-builder-2.0/features/email-confirmation/email-confirmation.php:589, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:494, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:501, ../profile-builder-2.0/modules/email-customizer/email-customizer.php:515
 msgid "Your selected password at signup"
 msgstr ""
 
@@ -5481,7 +5481,7 @@ msgstr ""
 msgid "Approve User Link"
 msgstr ""
 
-#: ../profile-builder-2.0/modules/email-customizer/email-customizer.php:485
+#: ../profile-builder-2.0/modules/email-customizer/email-customizer.php:486
 msgid "The users selected password at signup"
 msgstr ""
 
@@ -6233,15 +6233,15 @@ msgstr ""
 msgid "To use reCAPTCHA you must get an API key from"
 msgstr ""
 
-#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:173
+#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:176
 msgid "For security reasons, you must pass the remote ip to reCAPTCHA!"
 msgstr ""
 
-#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:238
+#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:241
 msgid "To use reCAPTCHA you must get an API public key from:"
 msgstr ""
 
-#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:516
+#: ../profile-builder-2.0/front-end/default-fields/recaptcha/recaptcha.php:519
 msgid "Click the BACK button on your browser, and try again."
 msgstr ""
 
