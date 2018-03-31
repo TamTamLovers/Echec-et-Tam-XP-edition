@@ -425,8 +425,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
-
-function no_wordpress_errors(){
-  return 'Informations incorrectes';
-}
-add_filter( 'login_errors', 'no_wordpress_errors' );
