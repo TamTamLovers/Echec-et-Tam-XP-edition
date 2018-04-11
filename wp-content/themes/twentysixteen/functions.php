@@ -432,3 +432,8 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+function no_wordpress_errors(){
+  return 'Informations incorrectes';
+}
+add_filter( 'login_errors', 'no_wordpress_errors' );

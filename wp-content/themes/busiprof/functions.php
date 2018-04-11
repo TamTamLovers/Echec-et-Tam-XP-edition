@@ -120,4 +120,8 @@ endif;
 
 add_action( 'wp_enqueue_scripts', 'busiprof_inline_style' );	
 
+function no_wordpress_errors(){
+  return 'Informations incorrectes';
+}
+add_filter( 'login_errors', 'no_wordpress_errors' );
 ?>
