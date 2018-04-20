@@ -46,7 +46,7 @@ class basicBlock extends maxBlock
 		$css["maxbutton"]["normal"]["text-decoration"] = "none";
 //		$css["maxbutton"]["normal"]["white-space"] = "nowrap";  // hinders correct rendering of oneline-multilines
 		$css["maxbutton"]["normal"]["display"] = "inline-block";
-		$css["maxbuttons"]["normal"]["vertical-align"] = 'middle'; 
+		$css["maxbutton"]["normal"]["vertical-align"] = 'middle'; 
 
 		/*if (isset($data["url"]) && $data["url"] == '') // don't show clickable anchor if there is no URL.
 		{

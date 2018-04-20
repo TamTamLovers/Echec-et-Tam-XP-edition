@@ -252,7 +252,7 @@ class maxButtonsAdmin
 			$args["paged" ] = $paged;
 
 
-		$button = new MaxButton();
+		$button = MB()->getClass('button');
 		$buttons = $admin->getButtons($args);
 
 		echo "<div id='maxbuttons'><div class='preview-buttons'>";

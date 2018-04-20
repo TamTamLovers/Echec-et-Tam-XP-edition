@@ -2,7 +2,7 @@
 namespace MaxButtons;
 defined('ABSPATH') or die('No direct access permitted');
 
-$button = MB()->getClass("button"); //new maxButton();
+$button = MB()->getClass("button"); 
 $button_id = 0;
 
 if ($_POST) {

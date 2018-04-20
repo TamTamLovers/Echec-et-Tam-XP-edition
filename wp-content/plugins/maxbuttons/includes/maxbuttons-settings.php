@@ -4,7 +4,7 @@ defined('ABSPATH') or die('No direct access permitted');
 
 // settings for this page are registered in register_setting ( main class )
 
-$button = new maxButton(); // To load maxfield templates
+$button = MB()->getClass('button'); // To load maxfield templates
 
 if(isset($_POST['alter_charset'])) {
 
@@ -23,7 +23,7 @@ if(isset($_POST['alter_charset'])) {
 
 if (isset($_POST["reset_cache"]))
 {
-	$button = new maxButton();
+	$button = MB()->getClass('button');
 	$button->reset_cache();
 
 }
@@ -41,7 +41,7 @@ if (isset($_POST["replace"]) && check_admin_referer('mb_bulk_edit', 'bulk_edit')
 	$replace = sanitize_text_field($_POST["replace"]);
 	$field = sanitize_text_field($_POST["replace_field"]);
 
-	$button = new maxButton();
+	$button = MB()->getClass('button');
 
 	if ($field == '')
 		exit("FATAL");

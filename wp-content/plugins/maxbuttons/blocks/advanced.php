@@ -175,7 +175,7 @@ class advancedBlock extends maxBlock
 								if (isset($this->data["id"]) && $this->data['id'] > 0)
 								{
 									$id = $this->data["id"];
-									$b = new maxButton();
+									$b = MB()->getClass('button');
 
 									$b->set($id);
 									$b->parse_button();

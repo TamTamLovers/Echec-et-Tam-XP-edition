@@ -258,7 +258,7 @@
 			}
 			catch(err)
 			{
-
+ex
 				console.log('MB Modal Callback Error: ' + err.message);
 				console.log('MB Mobdal tried calling: ' + funcName);
 			}

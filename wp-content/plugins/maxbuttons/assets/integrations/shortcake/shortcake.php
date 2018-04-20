@@ -40,7 +40,7 @@ class mbCake
 
 			$button_id = $match[2];
 
-			$button = new maxButton();
+			$button = MB()->getClass('button');
 			$button->set($button_id);
 
 			$button->parse_button();

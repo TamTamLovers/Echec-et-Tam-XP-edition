@@ -120,7 +120,6 @@ class maxButtonsPlugin
 			"collections" => "maxCollections",
 			"collection" => "maxCollection",
 			"pack" => "maxPack",
-
 		);
 
 		$this->mainClasses = $classes;
@@ -375,7 +374,7 @@ class maxButtonsPlugin
  		}
 
 		$version = MAXBUTTONS_VERSION_NUM;
-		$this->load_library('fontawesome');
+		//$this->load_library('fontawesome');
 
 		wp_enqueue_style('wp-color-picker');
 		wp_enqueue_style('maxbuttons-css', $this->plugin_url . 'assets/css/style.css', array(), $version);
@@ -471,7 +470,7 @@ class maxButtonsPlugin
 		if (! $this->debug_mode)
 			$js_url .= 'min/';
 
-		$this->load_library('fontawesome');
+		//$this->load_library('fontawesome');
 
 		wp_register_script('mb-media-button', $js_url . 'maxbuttons_media_button.js', array('jquery', 'maxbuttons-modal'), $version, true);
 		$this->load_modal_script();

@@ -4,19 +4,19 @@ defined('ABSPATH') or die('No direct access permitted');
 
 $result = '';
 
-exit("Not used"); 
+exit("Not used");
 
-$button = new maxButton(); 
+$button = MB()->getClass('button'); 
 
 if ($_POST) {
 	if (isset($_POST['button-id']) && isset($_POST['bulk-action-select'])) {
 		if ($_POST['bulk-action-select'] == 'restore') {
 			$count = 0;
-			
+
 			foreach ($_POST['button-id'] as $id) {
 				$button->set($id);
-				$button->setStatus('publish'); 
-				
+				$button->setStatus('publish');
+
 				//maxbuttons_button_restore($id);
 				$count++;
 			}
@@ -24,15 +24,15 @@ if ($_POST) {
 			if ($count == 1) {
 				$result = __('Restored 1 button.', 'maxbuttons');
 			}
-			
+
 			if ($count > 1) {
 				$result = __('Restored ', 'maxbuttons') . $count . __(' buttons.', 'maxbuttons');
 			}
 		}
-		
+
 		if ($_POST['bulk-action-select'] == 'delete') {
 			$count = 0;
-			
+
 			foreach ($_POST['button-id'] as $id) {
 				$button->delete($id);
 				$count++;
@@ -41,7 +41,7 @@ if ($_POST) {
 			if ($count == 1) {
 				$result = __('Deleted 1 button.', 'maxbuttons');
 			}
-			
+
 			if ($count > 1) {
 				$result = __('Deleted ', 'maxbuttons') . $count . __(' buttons.', 'maxbuttons');
 			}
@@ -60,26 +60,26 @@ if (isset($_GET['message']) && $_GET['message'] == '1delete') {
 
 
 $args = array();
-if (isset($_GET["orderby"])) 
-	$args["orderby"] = $_GET["orderby"]; 
-if (isset($_GET["order"])) 
-	$args["order"] = $_GET["order"]; 
+if (isset($_GET["orderby"]))
+	$args["orderby"] = $_GET["orderby"];
+if (isset($_GET["order"]))
+	$args["order"] = $_GET["order"];
 
 $mbadmin = MB()->getClass('admin');
 
-$args["status"] = "trash"; 
+$args["status"] = "trash";
 $args["limit"] = -1;
 
 //$published_buttons = $mbadmin->getButtons($args);
 $published_buttons_count = $mbadmin->getButtonCount($args);
 
 $trashed_buttons = $mbadmin->getButtons($args);
-$trashed_buttons_count = $mbadmin->getButtonCount($args); 
+$trashed_buttons_count = $mbadmin->getButtonCount($args);
 
-$pagination = $mbadmin->getButtonPages($args); 
+$pagination = $mbadmin->getButtonPages($args);
 
 
- 
+
 ?>
 
 <script type="text/javascript">
@@ -94,7 +94,7 @@ $pagination = $mbadmin->getButtonPages($args);
 				}
 			});
 		});
-		
+
 		<?php if ($result != '') { ?>
 			jQuery("#maxbuttons .message").show();
 		<?php } ?>
@@ -106,15 +106,15 @@ $pagination = $mbadmin->getButtonPages($args);
 		<div class="icon32">
 			<a href="https://maxbuttons.com" target="_blank"><img src="<?php echo MAXBUTTONS_PLUGIN_URL ?>/images/mb-32.png" alt="MaxButtons" /></a>
 		</div>
-		
+
 		<h2 class="title"><?php _e('MaxButtons: Button List', 'maxbuttons') ?></h2>
-		
+
 		<div class="logo">
-			<?php do_action("mb-display-logo"); ?> 
+			<?php do_action("mb-display-logo"); ?>
 		</div>
-		
+
 		<div class="clear"></div>
-		<?php do_action('mb-display-tabs'); ?> 
+		<?php do_action('mb-display-tabs'); ?>
 
 		<div class="form-actions">
 			<a class="button-primary" href="<?php echo admin_url() ?>admin.php?page=maxbuttons-controller&action=button"><?php _e('Add New', 'maxbuttons') ?></a>
@@ -123,13 +123,13 @@ $pagination = $mbadmin->getButtonPages($args);
 		<?php if ($result != '') { ?>
 			<div class="message"><?php echo $result ?></div>
 		<?php } ?>
-		
+
 		<p class="status">
 			<a href="<?php echo admin_url() ?>admin.php?page=maxbuttons-controller&action=list"><?php _e('All', 'maxbuttons') ?></a> <span class="count">(<?php echo $published_buttons_count ?>)</span>
 			<span class="separator">|</span>
 			<strong><?php _e('Trash', 'maxbuttons') ?></strong> <span class="count">(<?php echo $trashed_buttons_count ?>)</span>
 		</p>
-		
+
 		<form method="post">
 			<select name="bulk-action-select" id="bulk-action-select">
 				<option value=""><?php _e('Bulk Actions', 'maxbuttons') ?></option>
@@ -137,8 +137,8 @@ $pagination = $mbadmin->getButtonPages($args);
 				<option value="delete"><?php _e('Delete Permanently', 'maxbuttons') ?></option>
 			</select>
 			<input type="submit" class="button" value="<?php _e('Apply', 'maxbuttons') ?>" />
-		
-			<div class="button-list">		
+
+			<div class="button-list">
 				<table cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<th><input type="checkbox" name="bulk-action-all" id="bulk-action-all" /></th>
@@ -147,10 +147,10 @@ $pagination = $mbadmin->getButtonPages($args);
 						<th><?php _e('Shortcode', 'maxbuttons') ?></th>
 						<th><?php _e('Actions', 'maxbuttons') ?></th>
 					</tr>
-					<?php foreach ($trashed_buttons as $b) { 
-					
-								$id = $b["id"]; 		
-								$button->set($id,'','trash'); 
+					<?php foreach ($trashed_buttons as $b) {
+
+								$id = $b["id"];
+								$button->set($id,'','trash');
 					?>
 						<tr>
 							<td valign="center">
@@ -159,7 +159,7 @@ $pagination = $mbadmin->getButtonPages($args);
 							<td>
 								<div class="shortcode-container">
 									<?php//echo do_shortcode('[maxbutton id="' . $id . '" externalcss="false" ignorecontainer="true"]') ?>
-									<?php $button->display( array("preview" => true, "preview_part" => "full") );  ?> 
+									<?php $button->display( array("preview" => true, "preview_part" => "full") );  ?>
 								</div>
 							</td>
 							<td>
@@ -182,7 +182,6 @@ $pagination = $mbadmin->getButtonPages($args);
 		</form>
 	</div>
 	<div class="ad-wrap">
-		<?php do_action("mb-display-ads"); ?> 
-	</div>	
+		<?php do_action("mb-display-ads"); ?>
+	</div>
 </div>
-

@@ -49,7 +49,7 @@ class Profile_Builder_Form_Creator{
 		$this->wppb_retrieve_custom_settings();
 
         if( ( !is_multisite() && current_user_can( 'edit_users' ) ) || ( is_multisite() && current_user_can( 'manage_network' ) ) )
-            add_action( 'wppb_before_edit_profile_fields', array( &$this, 'wppb_edit_profile_select_user_to_edit' ) );
+            add_action( 'wppb_before_edit_profile_fields', array( 'Profile_Builder_Form_Creator', 'wppb_edit_profile_select_user_to_edit' ) );
 	}
 
     /**
@@ -650,7 +650,7 @@ class Profile_Builder_Form_Creator{
 		return get_current_user_id();
 	}
 
-    function wppb_edit_profile_select_user_to_edit(){
+    static function wppb_edit_profile_select_user_to_edit(){
 
         $display_edit_users_dropdown = apply_filters( 'wppb_display_edit_other_users_dropdown', true );
         if( !$display_edit_users_dropdown )

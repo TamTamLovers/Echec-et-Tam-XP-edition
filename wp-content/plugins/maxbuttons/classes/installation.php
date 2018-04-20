@@ -62,7 +62,7 @@ class maxInstall
 		static::upgradeUTF();
 		static::updateFA();
 
-		$button = new maxButton();
+		$button = MB()->getClass('button');
 		$button->reset_cache(); //refresh cache
 
 		update_option(MAXBUTTONS_VERSION_KEY, MAXBUTTONS_VERSION_NUM);
@@ -186,7 +186,7 @@ class maxInstall
 			$wpdb->insert($table, array("id" => $id));
 
 			//$data = apply_filters("mb-migration-data",$data, $row);
-			$button = new maxButton();
+			$button = MB()->getClass('button');
 			$button->set($id);
 			$button->save($data);
 		}
@@ -318,7 +318,7 @@ class maxInstall
 		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
 		$table_name = maxUtils::get_table_name();
-		$button = new maxButton();
+		$button = MB()->getClass('button');
 		$blocks = $button->getBlocks();
 
 		// IMPORTANT: There MUST be two spaces between the PRIMARY KEY keywords

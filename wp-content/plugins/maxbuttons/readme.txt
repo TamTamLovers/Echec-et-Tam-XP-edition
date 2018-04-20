@@ -2,20 +2,23 @@
 Contributors: maxfoundry, basszje, arcware, johnbhartley
 Tags: wordpress button plugin, share button, wordpress buttons, css3 button generator, responsive buttons, css wordpress button
 Requires at least: 4.8
-Tested up to: 4.9.4
+Tested up to: 4.9.5
 Requires PHP: 5.3
-Stable tag: 7.0
+Stable tag: 7.1
 
 WordPress button plugin so powerful and easy to use anyone can create beautiful buttons, share buttons and social icons.
 
 == Description ==
-[MaxButtons](https://maxbuttons.com/?utm_source=repowp1&utm_medium=mbrepo&utm_content=mbr_maxbuttons&utm_campaign=mbr_maxbuttons) is a powerful WordPress button, share button and social icon plugin.  It to creates great-looking CSS3 WordPress buttons on any post or page on your site. Our button editor makes it a snap to generate awesome responsive buttons in very little time. The social share buttons and social icon features allow you to use or modify prebuilt social share and social icons to your delight.
+[MaxButtons](https://maxbuttons.com/?utm_source=repowp1&utm_medium=mbrepo&utm_content=mbr_maxbuttons&utm_campaign=mbr_maxbuttons) is a powerful WordPress button, share button and social icon plugin. Create great looking CSS3 WordPress buttons in a minute. Easy to understand. Our button editor with live preview makes it a snap to generate awesome responsive buttons in very little time. The social share buttons and social icon features allow you to add social options to your website in minutes.
 
-MaxButtons [WordPress button plugin](https://www.maxbuttons.com/#CSS3/?utm_source=repowbp&utm_medium=mbrepo&utm_content=wordpress_button_plugin&utm_campaign=repowbp) has been going strong for over 6 years and was the first button plugin for WordPress. MaxButtons has earned over 600 5 star reviews and over 1.5 million downloads.  Here are couple of our favorites:
+MaxButtons [WordPress button plugin](https://www.maxbuttons.com/#CSS3/?utm_source=repowbp&utm_medium=mbrepo&utm_content=wordpress_button_plugin&utm_campaign=repowbp) has been going strong for over 6 years and was the first button plugin for WordPress. MaxButtons has earned over 600 5-star reviews and over 1.5 million downloads.  Here are couple of our favorites:
 
 > “The best plugin of its kind” - by celito
 
 > “This plugin makes creating buttons sooooo easy.” - by ncrocker202
+
+> Why aren’t all plugins like this?!?
+MaxButtons easily solved my problem with lots of options when creating the button and a live view of what it was going to look like. It would have done the job for me there and then but being able to adjust the text AND link with shortcodes on my page made modifications a breeze. - by discgosforth
 
 > “Easy, clear, and robust. I'm a programmer and can write CSS till the cows come home, but why? Just get it, install it and use it. Then, when you're impressed, buy the pro version” - by jleahy
 
@@ -29,18 +32,16 @@ Max Foundry also makes the WordPress Gallery plugin [MaxGalleria](https://maxgal
 = WordPress Buttons =
 
 * [Create WordPress Buttons](https://maxbuttons.com/create-wordpress-button/?utm_source=repocreate&utm_medium=mbrepo&utm_content=how-to-create&utm_campaign=repocreate)
-* Getting [Social Icons](https://maxbuttons.com/?utm_source=repoicons1&utm_medium=mbrepo&utm_content=social_sharing&utm_campaign=repoicons1) on your WordPress site.
-* [Share Buttons](https://maxbuttons.com/?utm_source=reposhare&utm_medium=mbrepo&utm_content=social_sharing&utm_campaign=reposhare) on your WordPress site.
-* What is a [CSS3 Button Generator](https://maxbuttons.com/?utm_source=repocss3&utm_medium=mbrepo&utm_content=what-is-generator&utm_campaign=repocss3)?
+* Getting [Social Icons](https://maxbuttons.com/wordpress-share-buttons/?utm_source=repoicons1&utm_medium=mbrepo&utm_content=social_sharing&utm_campaign=repoicons1) on your WordPress site.
+* [Share Buttons](http://wordpress.org/plugins/share-button/) on your WordPress site.
 * [WordPress button](https://maxbuttons.com/product-category/button-packs/?utm_source=repolibs&utm_medium=mbrepo&utm_content=button_pack&utm_campaign=repolibs) library and button sets can make my designers and developers more productive.
 
 = MaxButtons =
 
 * No coding, the plugin takes care of everything
-* Includes 5 beautiful, configurable Social Share sets
 * Button shortcodes for ease of use
 * Create unlimited number of buttons
-* Live preview window instantly updated as you customize your buttons
+* Live preview window instantly updates as you customize your buttons
 * Color picker for unlimited color combinations
 * Works with all modern browsers, degrades gracefully for others
 * Fully CSS3 compliant with text shadowing, box shadowing, gradients, etc.
@@ -73,22 +74,21 @@ Plus email and print icons.
 
 In addition to promoting your content through MaxButtons share buttons you can also use share buttons to promote your social network profiles.  Simply select a social icon or make a button, include the link to your profile and post the button shortcode on your page. Social icons are easy with MaxButtons!
 
-
 = MaxButtons Pro =
 
 Take your buttons to the next level with [MaxButtons Pro](https://www.maxbuttons.com/pricing/?utm_source=repombp&utm_medium=mbrepo&utm_content=MBPro&utm_campaign=repombp)!
 
 Our premium WordPress plugin for buttons, share buttons and social icons brings you the [best WordPress button plugin](https://maxbuttons.com/?utm_source=mprepo&utm_medium=mbrepo&utm_content=best_css3_button&utm_campaign=repobestcss3) through continuous feature updating. Upgrading to the Pro version allows you to add icons and images to your custom WordPress buttons. The Pro features allow you to do so much more!
 
-* **Icon Support** - Add icons to your buttons and customize placement and size.
+* **Icon Support** - Add icons and images to your buttons and customize placement and size.
 * **Multi-line text** - Add a second line of text and stylize with font, size and placement.
 * **Google Fonts** - We have included the entire set to help your buttons stand out with beautiful typography.
 * **Button Packs** - Ready to use, value priced button sets that make any site good great.
-* **Google Analytics** Event Tracking for WordPress Buttons. The best way to see you users’ interactions with buttons in Google Analytics. No coding needed.
+* **Google Analytics** [Event Tracking for WordPress Buttons](https://maxbuttons.com/google-analytics-event-tracking/). The best way to see you users’ interactions with buttons in Google Analytics. No coding needed.
 * **Import/Export** - Useful for backing up and/or moving your buttons. Also, use any of the great free icons listed on our site.
 * Include images in buttons.
 * **Button Search** - for easier management of large button sets.
-* **Font Awesome** - easiest WordPress integration
+* **Font Awesome 5** - Largest icon collection, fastest served
 * **Visual Composer** - Integrated with Visual Composer
 * **Contact Form 7** Integration
 * **Beaver Builder** Integration
@@ -251,6 +251,11 @@ Secondly, please use latin only characters for button name ( Basic settings) and
 
 == Changelog ==
 
+= 7.1 =
+
+* Vertical align now working
+* Fixed issue with selecting buttons via SiteOrigin Page Builder
+
 = 7.0 =
 
 * Removed old Social Share from base plugin. Use WordPress Share Buttons ( http://wordpress.org/plugins/share-button/ )
@@ -387,188 +392,16 @@ Secondly, please use latin only characters for button name ( Basic settings) and
 * Fixed lower save button not working in social share
 * Fixed layout issue in Social Share
 
-= 6.11.1 =
-
-* Removed holiday sale
-
-= 6.11 =
-
-* Shortcode options in add button dialog
-* Fixed crash when running PHP 7.1.0
-
-= 6.10 =
-
-* Fixed color issue with preview color running one click behind
-* Fixed issue with hover gradients, when gradients are off
-* Fixed text shadow issue in CSS output
-
-= 6.9 =
-
-* Tested for WP 4.7
-* Improved copy colors
-
-= 6.8 =
-
-* Fixed several smaller bugs in responsive
-* Fixed smaller layout issues ( consistency )
-* Upgraded SCSSPHP parser to 0.40
-* Fixed 'undefined variable' in responsive
-
-= 6.7 =
-
-* Button height in responsive settings
-* Fixed responsive bug regarding hiding option
-* Responsive settings updated
-* Add Button Dialog updated (more clear)
-* Colorpicker slightly bigger
-
-= 6.6 =
-
-* Improved tab index on button editor.
-* Fixed Copy Color button position in Chrome
-* Fixed minor CSS issues
-
-= 6.5 =
-
-* Gradient background color option can be switched on and off
-* New material switches to replace the checkboxes
-
-= 6.4 =
-
-* Copy colors feature added
-* Fixed several small issues with the color picker
-
-= 6.3 =
-
-* Updated Features page
-
-
-= 6.2 =
-
-* Improved visibility of the color picker
-* Fixed possible rendering issue with Box Shadow
-* Fixed: in rare case the button could overlay the action buttons in the overview
-
-= 6.1 =
-
-* Several updates to the Color Picker
-* Box Shadow spread option added
-* Fixed conflict with important and box shadow setting
-
-= 6.0 =
-
-* Version 6 milestone
-* Fixed small styling issue in header
-* Updated link in plugin
-
-= 5.13 =
-
-* Fixed several notices when creating new buttons
-* Buttons will now always have 'pointer' cursor
-
-= 5.12 =
-
-* Replaced color picker with WordPress default color picker
-* Border radius can be locked to change all sides at onces.
-* Cleanup of JS functions.
-
-= 5.11 =
-
-* Improvements to layout for small and mobile views
-* Optimizations to modal on resizing
-* Social icons for Eyeem added
-
-= 5.10 =
-
-* Fixed issue with background when using gradients
-* Collection name is shown in button overview when button is in collection
-* Database checks and failovers improved
-* Several small updates to styling and layout
-* Fixed display issue showing pack name / description when empty
-
-= 5.9 =
-
-* Greatly improved modal layouts
-* Fixed - Social Share : non-existing buttons will not show.
-* Child-spans now inherit background settings from parent anchor
-
-= 5.8 =
-
-* Fixed - Social Share remove button visible again
-* Fixed - Social Share button without attached network no longer open as popup by default.
-* Fixed - Custom Media Queries disabled after saving
-* Description field can now be hidden via settings
-* Various layout optimizations
-* Tested for version 4.6
-
-= 5.7 =
-
-* Fixed omission in button clear function causing not to clear fully
-* Fixed typo in Social Share shortcode
-* Fixed social share bug, not correctly removing counts in certain situations
-* Fixed social share icons not having cursor pointer
-* Fixed Text Shadow bug with buttons having only shadow top set.
-* Inline loading of social share collections
-
-= 5.6 =
-
-* Updated Social Share welcome message
-* Updated Readme text
-* Tested for WP 4.5.3
-
-= 5.5 =
-
-* Fixed CSS in review notice
-* Fixed title issue with support topic titles
-* Fixed small outlining issues in button editor
-
-= 5.4 =
-
-* Colorpicker code enhanced
-* Updated container options interface
-
-= 5.3 =
-
-* Increased performance for shortcode when having an URL in shortcode.
-* Fixed bug Border Shadow not showing when blur is zero.
-* Fixed bug Text Shadow not showing when blur is zero.
-* Fixed issue Text not displaying in preview when button was saved without text
-* Minified all Javascript in plugin for faster performance.
-
-
-= 5.2 =
-
-* Fixed version check to enhance database upgrades
-* Fixed Add buttons dialog in Beaver Builder
-* Extra check for social sharing not to load on WP login pages
-
-= 5.1 =
-
-* Better pagination and display on Add Button dialog
-* Fixed certain Social Share default values .
-* Made number fields slightly larger
-* Tested up to 4.5.2
-
-= 5.0 =
-
-* New button editor interface
-* Removed maximum length of text fields
-* Performance: Javascript loading streamlined
-* Fixed: Removal of social sharing collections
-* Improved social share picker
-* Fixed Window resize bug in popups
-* Fixed Array Bug in Social block
-
 
 == Upgrade Notice ==
-
-= 3.19 =
-
-URL handling has been changed. If you use non-usual URL's in your buttons please let us know directly if you encounter any problems.
 
 = 4.0 =
 
 This major update includes new Social sharing features. If you run into issues please let us know via support. Experiences are also welcome!
+
+= 3.19 =
+
+URL handling has been changed. If you use non-usual URL's in your buttons please let us know directly if you encounter any problems.
 
 = 3.0 =
 Attention! This is a big upgrade from 2.x. Before installation it's adviced take a backup. In case your buttons don't appear after upgrading,

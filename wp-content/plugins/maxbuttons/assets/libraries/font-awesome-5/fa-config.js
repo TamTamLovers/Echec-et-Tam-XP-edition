@@ -1,5 +1,5 @@
 window.FontAwesomeConfig = {
-//  autoReplaceSvg: false,
+autoReplaceSvg: true,
 keepOriginalSource : true,
 replacementClass: 'svg-mbp-fa',
 observeMutations: true,

@@ -3,7 +3,9 @@
 /* Get the standard AJAX vars for this plugin */
 
 function maxAjax() {
-
+		this.spinnerFunction = this.showSpinner;
+		this.successHandler = this.defaultSuccesHandler;
+		this.errorHandler = this.defaultErrorHandler;
 }
 
 maxAjax.prototype.init = function()
@@ -26,11 +28,21 @@ maxAjax.prototype.ajaxInit = function()
 	return data;
 }
 
+maxAjax.prototype.setFunction = function(type, new_function)
+{
+		if (type == 'spinner')
+		{
+			this.spinnerFunction = new_function;
+		}
+}
+
 maxAjax.prototype.ajaxForm = function (e)
 {
 	e.preventDefault();
 
 	var target = $(e.target);
+ 
+
 	var form = $(target).parents('form');
 	var action = $(target).data('action');
 
@@ -41,7 +53,7 @@ maxAjax.prototype.ajaxForm = function (e)
 
 	$(document).trigger('maxajax_formpost_' + action, [data,target]);
 
-	this.showSpinner(target);
+	this.spinnerFunction(target);
 
 	this.ajaxPost(data);
 }
@@ -50,7 +62,16 @@ maxAjax.prototype.ajaxForm = function (e)
 maxAjax.prototype.ajaxCall = function (e)
 {
 	e.preventDefault();
-	var target = e.target;
+	var target = $(e.target);
+
+	if (! $(target).hasClass('.mb-ajax-action') && ! $(target).hasClass('.mb-ajax-action-change') )
+	{
+			if ($(target).parents('.mb-ajax-action'). length > 0)
+				target  = $(e.target).parents('.mb-ajax-action');
+
+			if ($(target).parents('.mb-ajax-action-change'). length > 0)
+				target  = $(e.target).parents('.mb-ajax-action');
+	}
 
 	var param = false;
 	var plugin_action = $(target).data('action');
@@ -68,7 +89,9 @@ maxAjax.prototype.ajaxCall = function (e)
 	data['param'] = param;
 	data['post'] = $('form').serialize(); // send it all
 
-	this.showSpinner(target);
+	var spinnerFunc = this.spinnerFunction;
+
+	this.spinnerFunction(target);
 
 	this.ajaxPost(data);
 }
@@ -104,7 +127,6 @@ maxAjax.prototype.ajaxPost = function(data, successHandler, errorHandler)
 		var action = data['plugin_action'];
 		var errorHandler = function (r,s,o,) { self.defaultErrorHandler(r,s,o,action) } ;
 	}
-
 
 	$.ajax({
 		type: "POST",
