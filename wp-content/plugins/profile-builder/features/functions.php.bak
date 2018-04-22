@@ -669,16 +669,8 @@ function wppb_required_field_error($field_title='') {
     $required_error = apply_filters('wppb_required_error' , __('This field is required','profile-builder') , $field_title);
 
     return $required_error;
-}
-/**
- * Fonction pour l'erreur nom ou prénom avec des chiffres
- */
-function wpp_custom_error_number($field_title='') {
-	$required_error = apply_filters('wppb_required_error' , 'Ce champ ne doit avoir que des lettres.' , $field_title);
 
-    return $required_error;
 }
-
 
 /**
  * Function that returns a certain field (from manage_fields) by a given id or meta_name

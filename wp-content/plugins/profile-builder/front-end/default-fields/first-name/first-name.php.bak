@@ -40,9 +40,6 @@ function wppb_check_first_name_value( $message, $field, $request_data, $form_loc
             return wppb_required_field_error($field["field-title"]);
         }
     }
-	if (preg_match("([0-9])", $request_data['first_name'])) {
-		return wpp_custom_error_number($field["field-title"]);
-	}
 
     return $message;
 }

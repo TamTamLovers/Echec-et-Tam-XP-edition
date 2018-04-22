@@ -1113,7 +1113,7 @@ class WPPB_Roles_Editor {
         ?>
         <table class="form-table">
             <tr class="wppb-re-edit-user">
-                <th><?php esc_html_e( 'Edit User Roles', 'profile-builder' ); ?></th>
+                <th><?php esc_html_e( 'Editer les rôles utilisateurs', 'profile-builder' ); ?></th>
 
                 <td>
                     <div>
